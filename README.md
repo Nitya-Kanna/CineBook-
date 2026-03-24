@@ -69,4 +69,4 @@ See [.env.example](.env.example). `DATABASE_URL` must use the `postgresql+asyncp
 - [ ] Phase 7 — Redis caching (seat availability + invalidation)
 - [ ] Phase 8 — Celery background jobs (email + booking expiry)
 - [ ] Phase 9 — Testing (async tests + race-condition tests)
-- [ ] Phase 10 — Deployment (Dockerfile, Nginx, Gunicorn, health checks)
+- [ ] Phase 10 — Deployment (Dockerfile, Nginx, Railway)

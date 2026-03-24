@@ -1,6 +1,6 @@
 # CineBook
 
-Movie seat reservation backend (modular monolith). Phase 1 provides configuration, async PostgreSQL access, Dockerized Postgres/Redis, and a minimal FastAPI app.
+Async Movie Seat Reservation system (FastAPI + PostgreSQL + Redis + Celery). Project covering relational modeling, race condition prevention, JWT auth, caching, and background jobs
 
 **Phase 2 — data model:** see [docs/schema.md](docs/schema.md) (tables, enums, constraints, indexes).
 

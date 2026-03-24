@@ -2,7 +2,6 @@
 
 Async Movie Seat Reservation system (FastAPI + PostgreSQL + Redis + Celery). Project covering relational modeling, race condition prevention, JWT auth, caching, and background jobs
 
-**Phase 2 — data model:** see [docs/schema.md](docs/schema.md) (tables, enums, constraints, indexes).
 
 ## Prerequisites
 
@@ -52,3 +51,22 @@ See [.env.example](.env.example). `DATABASE_URL` must use the `postgresql+asyncp
 
 - Lint: `ruff check app`
 - Tests (later phases): `pytest`
+
+## Project Progress
+
+- Current phase: **Phase 3 (in progress)** — SQLAlchemy models and Alembic setup are added.
+- Last completed milestone: **Phase 2** — schema design documented in [docs/schema.md](docs/schema.md).
+- Next milestone: **Finish Phase 3** by generating and validating the initial Alembic migration from current models.
+
+### Roadmap Status
+
+- [x] Phase 1 — Project setup (`pyproject.toml`, env config, docker-compose, DB/session wiring)
+- [x] Phase 2 — Data modeling and schema design
+- [ ] Phase 3 — SQLAlchemy models and first migration
+- [ ] Phase 4 — API layer (routes, schemas, dependencies)
+- [ ] Phase 5 — Auth (JWT, bcrypt, register/login)
+- [ ] Phase 6 — Race condition prevention (`SELECT FOR UPDATE`, transactions, Redis lock)
+- [ ] Phase 7 — Redis caching (seat availability + invalidation)
+- [ ] Phase 8 — Celery background jobs (email + booking expiry)
+- [ ] Phase 9 — Testing (async tests + race-condition tests)
+- [ ] Phase 10 — Deployment (Dockerfile, Nginx, Gunicorn, health checks)
